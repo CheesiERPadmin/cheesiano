@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include cheesiano *.css
+recursive-include cheesiano *.csv
+recursive-include cheesiano *.html
+recursive-include cheesiano *.ico
+recursive-include cheesiano *.js
+recursive-include cheesiano *.json
+recursive-include cheesiano *.md
+recursive-include cheesiano *.png
+recursive-include cheesiano *.py
+recursive-include cheesiano *.svg
+recursive-include cheesiano *.txt
+recursive-exclude cheesiano *.pyc
