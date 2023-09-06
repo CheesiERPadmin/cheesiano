@@ -215,3 +215,4 @@ app_license = "MIT"
 # auth_hooks = [
 #	"cheesiano.auth.validate"
 # ]
+fixtures = ["Item"]
