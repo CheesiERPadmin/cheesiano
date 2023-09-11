@@ -118,13 +118,16 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
+doc_events = {
 #	"*": {
 #		"on_update": "method",
 #		"on_cancel": "method",
 #		"on_trash": "method"
 #	}
-# }
+    "Material Request":{
+        "on_submit":"cheesiano.cheesiano.custom_script.material_request.create_purchase_order"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -215,4 +218,4 @@ app_license = "MIT"
 # auth_hooks = [
 #	"cheesiano.auth.validate"
 # ]
-fixtures = ["Item"]
+
