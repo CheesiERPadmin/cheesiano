@@ -132,23 +132,28 @@ doc_events = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+    "cron": {
+                "*/2 * * * *": [
+			                    "erpnext.stock.reorder_item.reorder_item"
+		                    ]
+    },
 #	"all": [
 #		"cheesiano.tasks.all"
 #	],
 #	"daily": [
 #		"cheesiano.tasks.daily"
 #	],
-#	"hourly": [
-#		"cheesiano.tasks.hourly"
-#	],
+# "hourly": [
+# 	"cheesiano.cheesiano.custom_script.material_request.scheduler_1"
+# ],
 #	"weekly": [
 #		"cheesiano.tasks.weekly"
 #	],
 #	"monthly": [
 #		"cheesiano.tasks.monthly"
 #	],
-# }
+}
 
 # Testing
 # -------

@@ -7,14 +7,10 @@ def create_purchase_order(doc,method):
         for item in doc.items:
             try:
                 po_doc.supplier = frappe.db.get_value("Item Supplier",{"parent":item.item_code},'supplier')
-                
                 if not po_doc.supplier:
-                    frappe.msgprint("Supplier is not assigned")
-                    po_doc.save()
+                    frappe.msgprint(f"Supplier is not assigned for the item {item.item_code}")
+                    return False
+                po_doc.save()
             except:
                 raise
             
-
-def delete_purchase_order(doc,method):
-    frappe.msgprint(f"Purchase Order for this Material Request {doc.name} has been deleted")
-    return True
