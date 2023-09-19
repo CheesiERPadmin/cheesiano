@@ -134,8 +134,8 @@ doc_events = {
 
 scheduler_events = {
     "cron": {
-                "*/2 * * * *": [
-			                    "erpnext.stock.reorder_item.reorder_item"
+                "*/5 * * * *": [
+			                     "erpnext.stock.reorder_item.reorder_item"
 		                    ]
     },
 #	"all": [
