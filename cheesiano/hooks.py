@@ -126,6 +126,9 @@ doc_events = {
 #	}
     "Material Request":{
         "on_submit":"cheesiano.cheesiano.custom_script.material_request.create_purchase_order"
+    },
+    "Purchase Order" :{
+        "on_submit":"cheesiano.cheesiano.custom_script.purchase_order.save_item_price"
     }
 }
 
