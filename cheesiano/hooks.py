@@ -220,6 +220,10 @@ scheduler_events = {
 # Authentication and authorization
 # --------------------------------
 
+fixtures = [
+    "Translation"
+]
+
 # auth_hooks = [
 #	"cheesiano.auth.validate"
 # ]
